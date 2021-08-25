@@ -13,9 +13,21 @@ struct SideBar: View {
         #if os(iOS)
         content
           .navigationTitle("Learn")
+          .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+              Image(systemName: "person.crop.circle")
+            }
+          }
         #else
         content
           .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
+          .toolbar {
+            ToolbarItem(placement: .automatic) {
+              Button(action: {}) {
+                Image(systemName: "person.crop.circle")
+              }
+            }
+          }
         #endif
 
         // default View: iPadOS에서 화면 진입 시 SideBar와 함께 보여지는 기본 뷰
