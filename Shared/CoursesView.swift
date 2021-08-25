@@ -14,10 +14,17 @@ struct CoursesView: View {
   var body: some View {
     ZStack {
       // 작은 뷰
-      CourseItem()
-        // 연결되는 뷰의 기하학적인 구조만을 정의, frame 이전에 설정
-        .matchedGeometryEffect(id: "Card", in: nameSpace, isSource: !show)
-        .frame(width: 335, height: 250)
+      ScrollView {
+        VStack(spacing: 20) {
+          CourseItem()
+            // 연결되는 뷰의 기하학적인 구조만을 정의, frame 이전에 설정
+            .matchedGeometryEffect(id: "Card", in: nameSpace, isSource: !show)
+            .frame(width: 335, height: 250)
+          CourseItem()
+            .frame(width: 335, height: 250)
+        }
+        .frame(maxWidth: .infinity)
+      }
 
       if show {
         ScrollView {
@@ -34,9 +41,16 @@ struct CoursesView: View {
           }
           .padding()
         }
-        .transition(.opacity)
-        // safeArea 무시
+        .background(Color("Background 1"))
+        .transition(
+          // 비대칭형 애니메이션 구현시 사용 
+          .asymmetric(insertion: AnyTransition.opacity.animation(Animation.spring().delay(0.3)),
+                      removal: AnyTransition.opacity.animation(.spring())
+          )
+        )
         .edgesIgnoringSafeArea(.all)
+
+        // safeArea 무시
       }
     }
     // 프리뷰에서는 노출 애니메이션이 제대로 동작하지 않으나, 앱에서는 정상적으로 동작됨
@@ -48,7 +62,7 @@ struct CoursesView: View {
         show.toggle()
       }
     }
-//    .animation(.spring())
+    //    .animation(.spring())
   }
 }
 
