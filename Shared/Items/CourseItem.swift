@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct CourseItem: View {
-    var body: some View {
-      VStack(alignment: .leading) {
+  var course: Course = courses[0]
+
+  var body: some View {
+    VStack(alignment: .leading) {
+      Spacer()
+      HStack {
         Spacer()
-        HStack {
-            Spacer()
-            Image("Illustration 1")
-              .resizable()
-              .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fit/*@END_MENU_TOKEN@*/)
-            Spacer()
-        }
-        Text("Hello, SwiftUI!").fontWeight(.bold).foregroundColor(Color.white)
-        Text("30 Sections").font(.footnote).foregroundColor(Color.white)
+        Image(course.image)
+          .resizable()
+          .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fit/*@END_MENU_TOKEN@*/)
+        Spacer()
       }
-      .padding(.all)
-      .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
-      .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-      .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+      Text(course.title).fontWeight(.bold).foregroundColor(Color.white)
+      Text(course.subtitle).font(.footnote).foregroundColor(Color.white)
     }
+    .padding(.all)
+    .background(course.color)
+    // clipShape -> CornerRadius보다 부드러운 모서리를 적용할 때 사용
+    .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+    .shadow(color: course.color.opacity(0.3), radius: 20, x: 0, y: 10)
+  }
 }
 
 struct CourseItem_Previews: PreviewProvider {
