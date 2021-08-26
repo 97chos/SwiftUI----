@@ -53,7 +53,7 @@
 > spacing: 20, padding: 10, GridItem 3개
 
 - GridItem에 정렬 속성을 추가할 수 있습니다.
-  - ### 1. adaptive
+  - ### . adaptive
     -  (LazyVGrid의 경우) minimum 값 이상의 사이즈로 columns마다 가능한 많이 아이템들을 배치하고자 할 때 사용되는 속성입니다.
     -  minimum과 maximum (혹은 둘 중 하나) 사이즈만 설정하면 기기의 스크린 사이즈에 맞춰서 자동적으로 columns의 수가 정해져서 배치되기 때문에, 정확한 columns의 수가 명세되어 있지 않다면 가장 편하게 사용할 수 있습니다.
     ```swift
@@ -63,10 +63,10 @@
     ```
       <img width="300" alt="스크린샷 2021-08-26 오후 1 02 42" src="https://user-images.githubusercontent.com/59811450/130898670-772c234c-2a97-45c2-bb22-dd9d8f3c9cee.png">
     
-  - ### 2.flexible
+  - ### .flexible
     - (LazyVGrid의 경우) minimum 값 이상의 사이즈로 column 수를 조절 하고 싶을 때 사용되는 사이즈 입니다. adaptive와 유사하나, 스크린 사이즈에 맞게 자동으로 조정되는 adaptive와 달리 columns마다 배치되는 아이템 수를 조절할 수 있다는 점에서 다릅니다.
 
-  - ### 3.fixed
+  - ### .fixed
     - (LazyVGrid의 경우) columns 크기를 직접 조절하고 싶을 때 사용하는 속성입니다.
 
 - Array로 GridItem을 생성할 수 있습니다. 
