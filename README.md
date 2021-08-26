@@ -1,8 +1,12 @@
 # SwiftUI Study
 > DesignCode SwiftUI 강의를 들으며 정리한 내용입니다.
 
+## Tools
+- 🎬 Design Code - Swift ([링크](https://designcode.io/courses))
+- 🔨 Xcode 12 or Later
+
 ## Curiculum
-- 빈 칸은 추후에 내용 정리 예정입니다.
+- 빈 칸 및 링크되지 않은 챕터 내용은 추후에 내용 정리 예정입니다.
 
 - Section I: SwiftUI for iOS 14
 > Ch#|Topic|Note?
@@ -27,6 +31,18 @@
 > 18| Animating Above Navigation | 
 > 19| Library Content and Modifiers | 
 > 20| Create Widget | 
+> 
 
+- Section II: Build an app with SwiftUI Part 1
+> Ch#|Topic|Note?
+> :---:|:---|:---|
+> 
+- Section III: Build an app with SwiftUI Part 2
+> Ch#|Topic|Note?
+> :---:|:---|:---|
+
+- Section IV: Build an app with SwiftUI Part 3
+> Ch#|Topic|Note?
+> :---:|:---|:---|
 
 
