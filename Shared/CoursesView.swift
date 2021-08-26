@@ -16,13 +16,16 @@ struct CoursesView: View {
   var body: some View {
     ZStack {
       // 작은 뷰
-      ScrollView {
-        VStack(spacing: 20) {
+      ScrollView() {
+        LazyVGrid(
+          columns: [GridItem(.adaptive(minimum: 160), spacing: 16)],
+          spacing: 16
+        ) {
           ForEach(courses) { item in
             CourseItem(course: item)
               // 연결되는 뷰의 기하학적인 구조만을 정의, frame 이전에 설정
               .matchedGeometryEffect(id: item.id, in: nameSpace, isSource: !show)
-              .frame(width: 335, height: 250)
+              .frame(height: 200)
               .onTapGesture {
                 // 두 애니메이션 방법 모두 사용 가능하나, 기하학적인 애니메이션은 이 방법이 더 적합하다고 판단,
                 // 애니메이션 도중 여러번 터치해도 부드럽게 동작됨.
@@ -36,6 +39,7 @@ struct CoursesView: View {
               .disabled(isDisable)
           }
         }
+        .padding(16)
         .frame(maxWidth: .infinity)
       }
 
@@ -54,7 +58,7 @@ struct CoursesView: View {
                   isDisable = false
                 }
               }
-            } 
+            }
 
           VStack {
             ForEach(0 ..< 20) { item in
