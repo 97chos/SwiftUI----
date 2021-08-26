@@ -22,7 +22,7 @@
 > 9| Delay and Asymmetric Transition | Delay 주는 방법과 동기적인 Transition 효과 사용해보기
 > 10| Matched Cards and Static Data | 정적인 데이터를 생성하고, 이를 카드에 매칭해보기
 > 11| Selection State and Disabled | 상태 선언 방법과 비활성화 처리해보기
-> 12| Lazy Grid Layout | LazyVGrid, LazyHGrid를 사용하여 컬렉션 뷰 구성해보기
+> 12| [Lazy Grid Layout](https://github.com/97chos/SwiftUI----/blob/main/Lectures/Section1_SwiftUI%20for%20iOS%2014/12_Lazy%20Grid%20and%20Layout/Lazy%20Grid%20and%20Layout.md) | LazyVGrid, LazyHGrid를 사용하여 컬렉션 뷰 구성해보기
 > 13| Matched Container and zIndex | 
 > 14| Passing Namespace | 
 > 15| Visual Effect Blur for macOS | 
