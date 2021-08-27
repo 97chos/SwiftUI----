@@ -23,8 +23,8 @@
 > 10| Matched Cards and Static Data | 정적인 데이터를 생성하고, 이를 카드에 매칭해보기
 > 11| Selection State and Disabled | 상태 선언 방법과 비활성화 처리해보기
 > 12| [Lazy Grid Layout](https://github.com/97chos/SwiftUI----/blob/main/Lectures/Section1_SwiftUI%20for%20iOS%2014/12_Lazy%20Grid%20and%20Layout/Lazy%20Grid%20and%20Layout.md) | LazyVGrid, LazyHGrid를 사용하여 컬렉션 뷰 구성해보기
-> 13| Matched Container and zIndex | 
-> 14| Passing Namespace | 
+> 13| Matched Container and zIndex | matchedContainer와 zIndex를 이용한 animation 수정
+> 14| [Passing Namespace](https://github.com/97chos/SwiftUI----/blob/fe8bfeb3c44d70ccf5345ad98d36f9520370d4e5/Lectures/Section1_SwiftUI%20for%20iOS%2014/14_Passing%20Namespace/Passing_Namespace.md) | 네임스페이스 전달 방식을 이용하여 동적인 데이터 
 > 15| Visual Effect Blur for macOS | 
 > 16| Size Class and Tab Bar | 
 > 17| Navigation Link and Modal | 
