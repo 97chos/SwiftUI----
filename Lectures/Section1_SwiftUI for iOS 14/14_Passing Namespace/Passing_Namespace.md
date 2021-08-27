@@ -130,3 +130,6 @@ struct CourseRow: View {
     }
 }
 ```
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/59811450/131068325-e92a8eac-c02a-4559-a2c4-8d70b0436aab.gif)
+
