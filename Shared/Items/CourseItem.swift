@@ -9,6 +9,11 @@ import SwiftUI
 
 struct CourseItem: View {
   var course: Course = courses[0]
+  #if os(iOS)
+  var cornerRadius: CGFloat = 22
+  #else
+  var cornerRadius: CGFloat = 10
+  #endif
 
   var body: some View {
     VStack(alignment: .leading) {
@@ -26,7 +31,7 @@ struct CourseItem: View {
     .padding(.all)
     .background(course.color)
     // clipShape -> CornerRadius보다 부드러운 모서리를 적용할 때 사용
-    .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+    .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
     .shadow(color: course.color.opacity(0.3), radius: 20, x: 0, y: 10)
   }
 }
