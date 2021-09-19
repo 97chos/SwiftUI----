@@ -32,31 +32,50 @@ struct CoursesView: View {
   var content: some View {
     // 작은 뷰
     ScrollView {
-      LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 16)],
-                spacing: 16) {
-        ForEach(courses) { item in
-          VStack {
-            CourseItem(course: item)
-              // 연결되는 뷰의 기하학적인 구조만을 정의, frame 이전에 설정
-              .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
-              .frame(height: 200)
-              .onTapGesture {
-                // 두 애니메이션 방법 모두 사용 가능하나, 기하학적인 애니메이션은 이 방법이 더 적합하다고 판단,
-                // 애니메이션 도중 여러번 터치해도 부드럽게 동작됨.
-                // .animation을 사용할 경우 애니메이션이 느려지고, 스크롤 시 렉이 발생한다.
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 0)) {
-                  show.toggle()
-                  selectedItem = item
-                  isDisabled = true
+      VStack(spacing: 0) {
+        Text("Courses")
+          .font(.largeTitle)
+          .bold()
+          .frame(maxWidth: .infinity, alignment: .leading)
+          .padding(16)
+          .padding(.top, 54)
+
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 16)],
+                  spacing: 16) {
+          ForEach(courses) { item in
+            VStack {
+              CourseItem(course: item)
+                // 연결되는 뷰의 기하학적인 구조만을 정의, frame 이전에 설정
+                .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
+                .frame(height: 200)
+                .onTapGesture {
+                  // 애니메이션 도중 여러번 터치해도 부드럽게 동작됨.
+                  // .animation을 사용할 경우 애니메이션이 느려지고, 스크롤 시 렉이 발생한다.
+                  withAnimation(.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 0)) {
+                    show.toggle()
+                    selectedItem = item
+                    isDisabled = true
+                  }
                 }
-              }
-              .disabled(isDisabled)
+                .disabled(isDisabled)
+            }
+            .matchedGeometryEffect(id: "container\(item.id)", in: namespace, isSource: !show)
           }
-          .matchedGeometryEffect(id: "container\(item.id)", in: namespace, isSource: !show)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity)
+
+        Text("Latest sections")
+          .fontWeight(.semibold)
+          .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+          .padding()
+
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 240))]) {
+          ForEach(courseSections) { item in
+            CourseRow(item: item)
+          }
         }
       }
-      .padding(16)
-      .frame(maxWidth: .infinity)
     }
     .zIndex(1)
   }
@@ -82,6 +101,7 @@ struct CoursesView: View {
       .zIndex(2)
       .frame(maxWidth: 712)
       .frame(maxWidth: .infinity)
+      .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))
     }
   }
 }

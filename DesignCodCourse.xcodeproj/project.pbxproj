@@ -49,6 +49,8 @@
 		7EB6881726DC72CB0051EC4B /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6881526DC72CB0051EC4B /* VisualEffectBlur.swift */; };
 		7EB6881926DC72DA0051EC4B /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6881826DC72DA0051EC4B /* VisualEffectBlur.swift */; };
 		7EB6881A26DC72DA0051EC4B /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6881826DC72DA0051EC4B /* VisualEffectBlur.swift */; };
+		7EB6881C26DC7EB00051EC4B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6881B26DC7EB00051EC4B /* TabBar.swift */; };
+		7EB6881D26DC7EB00051EC4B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6881B26DC7EB00051EC4B /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 		7E567C2926D884D900B85DA9 /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		7EB6881526DC72CB0051EC4B /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		7EB6881826DC72DA0051EC4B /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		7EB6881B26DC7EB00051EC4B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +153,14 @@
 		7E567BC626D4C7A800B85DA9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				7E567BC726D4C7A800B85DA9 /* DesignCodCourseApp.swift */,
-				7E567C1026D5E47900B85DA9 /* Navigation */,
-				7E567C1126D5E49000B85DA9 /* Items */,
-				7E567C1826D629A700B85DA9 /* Model */,
+				7E567C2026D882AF00B85DA9 /* CourseDetail.swift */,
 				7E567C1226D5E4F600B85DA9 /* CourseList.swift */,
 				7E567C0726D4DC5200B85DA9 /* CoursesView.swift */,
-				7E567C2026D882AF00B85DA9 /* CourseDetail.swift */,
+				7E567BC726D4C7A800B85DA9 /* DesignCodCourseApp.swift */,
 				7E567BC926D4C7AA00B85DA9 /* Assets.xcassets */,
+				7E567C1126D5E49000B85DA9 /* Items */,
+				7E567C1826D629A700B85DA9 /* Model */,
+				7E567C1026D5E47900B85DA9 /* Navigation */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				7E567BC826D4C7A800B85DA9 /* ContentView.swift */,
+				7EB6881B26DC7EB00051EC4B /* TabBar.swift */,
 				7E567C0A26D4DF3700B85DA9 /* SideBar.swift */,
 			);
 			path = Navigation;
@@ -402,6 +406,7 @@
 			files = (
 				7E567C1626D622A200B85DA9 /* Course.swift in Sources */,
 				7E567C2A26D884D900B85DA9 /* LivestreamSection.swift in Sources */,
+				7EB6881C26DC7EB00051EC4B /* TabBar.swift in Sources */,
 				7E567C3626D884D900B85DA9 /* Tutorial.swift in Sources */,
 				7E567BF226D4C7AA00B85DA9 /* ContentView.swift in Sources */,
 				7E567C0E26D5D8D700B85DA9 /* CourseItem.swift in Sources */,
@@ -450,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB6881D26DC7EB00051EC4B /* TabBar.swift in Sources */,
 				7E567BE326D4C7AA00B85DA9 /* Tests_iOS.swift in Sources */,
 				7EB6881726DC72CB0051EC4B /* VisualEffectBlur.swift in Sources */,
 			);

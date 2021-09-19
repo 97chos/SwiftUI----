@@ -41,3 +41,4 @@ struct CourseItem_Previews: PreviewProvider {
         CourseItem()
     }
 }
+
