@@ -26,7 +26,7 @@
 > 13| Matched Container and zIndex | matchedContainer와 zIndex를 이용한 animation 수정
 > 14| [Passing Namespace](https://github.com/97chos/SwiftUI----/blob/fe8bfeb3c44d70ccf5345ad98d36f9520370d4e5/Lectures/Section1_SwiftUI%20for%20iOS%2014/14_Passing%20Namespace/Passing_Namespace.md) | 네임스페이스 전달 방식을 이용하여 동적 데이터 할당
 > 15| Visual Effect Blur for macOS | 
-> 16| [Size Class and Tab Bar](Lectures/Section1_SwiftUI for iOS 14/16_Size Class and Tab Bar/Size Class and Tab Bar.md) | TabBar 생성 및 적용 
+> 16| [Size Class and Tab Bar](https://github.com/97chos/SwiftUI-Basic/blob/c09e89bc32c1771496a9b58a8203aaae7ce5a494/Lectures/Section1_SwiftUI%20for%20iOS%2014/16_Size%20Class%20and%20Tab%20Bar/Size%20Class%20and%20Tab%20Bar.md) | TabBar 생성 및 적용 
 > 17| Navigation Link and Modal | 
 > 18| Animating Above Navigation | 
 > 19| Library Content and Modifiers | 
