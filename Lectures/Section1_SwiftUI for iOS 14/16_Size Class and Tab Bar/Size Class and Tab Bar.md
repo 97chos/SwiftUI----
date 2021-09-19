@@ -53,10 +53,12 @@ struct TabBar: View {
 }
 ```
 
-<img width="300" alt="스크린샷 2021-08-26 오후 12 31 18" src="https://user-images.githubusercontent.com/59811450/130896090-b1c936fe-1f91-43f8-b23a-e7f71733382e.png">
+<img width="300" alt="스크린샷 2021-09-19 오후 8 34 01" src="https://user-images.githubusercontent.com/59811450/133927517-1e835c19-683c-4693-9008-ee098ed1563a.png">
 
 - 이후 네비게이션의 기초가 되는 contentView에 환경 변수를 추가하고, 해당 환경 변수가 .compact일 경우에는 TabBar가 보여지도록 코드를 추가합니다.
+<img width="396" alt="스크린샷 2021-09-19 오후 9 27 11" src="https://user-images.githubusercontent.com/59811450/133927537-b501d9ae-1379-4de3-b06a-e125141ede6b.png">
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/59811450/133927642-02cc75a2-6c14-4a52-b02b-230f70877361.gif)
 
  
     
