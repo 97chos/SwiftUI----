@@ -19,7 +19,7 @@ struct LibraryContent: LibraryContentProvider {
 }
 ```
 
-- LibraryContentBuilder 태그를 생성하고, [LibraryItem]을 타입으로 갖는 views 내부에 LibraryItem 항목을 생성하면, <pre><code>com + shift + L</code></pre> 키를 눌러서 호출되는 라이브러리 메뉴창에서 title을 검색하여 간단하게 해당 뷰를 삽입할 수 있습니다.
+- LibraryContentBuilder 태그를 생성하고, [LibraryItem]을 타입으로 갖는 views 내부에 LibraryItem 항목을 생성하면, ***comm + shift + L*** 키를 눌러서 호출되는 라이브러리 메뉴창에서 title을 검색하여 간단하게 해당 뷰를 삽입할 수 있습니다.
 
 <img width="793" alt="스크린샷 2021-09-22 오전 2 32 21" src="https://user-images.githubusercontent.com/59811450/134219449-d574c10e-ed1d-4295-8111-2dc513d8e190.png">
   
