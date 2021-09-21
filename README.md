@@ -29,7 +29,7 @@
 > 16| [Size Class and Tab Bar](https://github.com/97chos/SwiftUI-Basic/blob/c09e89bc32c1771496a9b58a8203aaae7ce5a494/Lectures/Section1_SwiftUI%20for%20iOS%2014/16_Size%20Class%20and%20Tab%20Bar/Size%20Class%20and%20Tab%20Bar.md) | TabBar 생성 및 적용 
 > 17| [Navigation Link and Modal](https://github.com/97chos/SwiftUI-Basic/blob/7b66bf4b9e47a72d832ab26bb41450f7d184c2ed/Lectures/Section1_SwiftUI%20for%20iOS%2014/17_Navigation%20Link%20and%20Modal/Navigation%20Link%20and%20Modal.md) | Navigation View Push 및 Pop 동작, Modal Present 동작 적용
 > 18| Animating Above Navigation | 
-> 19| Library Content and Modifiers | 
+> 19| [Library Content and Modifiers](https://github.com/97chos/SwiftUI-Basic/blob/fc17d8de4724b25ba2ac72751944888b75e6685f/Lectures/Section1_SwiftUI%20for%20iOS%2014/19_Library%20Content%20and%20Modifiers/Library%20Content%20and%20Modifiers.md) | Library 등록 및 modifer  
 > 20| Create Widget | 
 > 
 
