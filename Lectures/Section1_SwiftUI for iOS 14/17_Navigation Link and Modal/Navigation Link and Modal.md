@@ -18,9 +18,7 @@
     }
   }
 ```
-
-<img width="300" alt="스크린샷 2021-08-26 오후 12 31 18" src="https://user-images.githubusercontent.com/59811450/130896090-b1c936fe-1f91-43f8-b23a-e7f71733382e.png">
-
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/59811450/134136633-22234e6e-4d0a-4008-b438-09cdd0469a3b.gif)
 
 ## Modal Presentation
 
@@ -47,8 +45,8 @@ ForEach(courseSections) { item in
 ```
 
 - presented View가 dismiss 처리되는 과정에서 바인딩된 변수는 자동으로 false로 변경되는 것을 확인할 수 있습니다.
+<img width="776" alt="스크린샷 2021-09-21 오후 5 11 25" src="https://user-images.githubusercontent.com/59811450/134136702-0fc4d569-23d1-4fd3-a6e0-61d9f8caef37.png">
 
-   (이미지)
    
 - presented View에서 closeButton을 눌러 dismiss를 처리하는 과정은 다음과 같습니다.
 ```swift
@@ -65,4 +63,5 @@ CloseButton()
     presentationMode.wrappedValue.dismiss()
   }
 ```
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/59811450/134137041-e6de9e4a-71a7-437f-9e30-cf32d063581a.gif)
 
