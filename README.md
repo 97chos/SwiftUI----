@@ -30,7 +30,7 @@
 > 17| [Navigation Link and Modal](https://github.com/97chos/SwiftUI-Basic/blob/7b66bf4b9e47a72d832ab26bb41450f7d184c2ed/Lectures/Section1_SwiftUI%20for%20iOS%2014/17_Navigation%20Link%20and%20Modal/Navigation%20Link%20and%20Modal.md) | Navigation View Push 및 Pop 동작, Modal Present 동작 적용
 > 18| Animating Above Navigation | 
 > 19| [Library Content and Modifiers](https://github.com/97chos/SwiftUI-Basic/blob/fc17d8de4724b25ba2ac72751944888b75e6685f/Lectures/Section1_SwiftUI%20for%20iOS%2014/19_Library%20Content%20and%20Modifiers/Library%20Content%20and%20Modifiers.md) | Library 등록 및 modifer 추가 
-> 20| Create Widget | 
+> 20| [Create Widget](https://github.com/97chos/SwiftUI-Basic/blob/715cfc04e577e06fc295da62905b8585a1e91ec0/Lectures/Section1_SwiftUI%20for%20iOS%2014/20_Create%20Widget/Create%20Widget.md) | 위젯 구현 
 > 
 
 - Section II: Build an app with SwiftUI Part 1
