@@ -17,11 +17,7 @@ struct ContentView: View {
   @ViewBuilder
   var body: some View {
       #if os(iOS)
-      if horizontalSizeClass == .compact {
-        TabBar()
-      } else {
-        SideBar()
-      }
+      CoursesView()
       #else
       SideBar()
         .frame(minWidth: 1000, minHeight: 600)

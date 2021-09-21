@@ -29,8 +29,6 @@ struct SideBar: View {
             }
           }
         #endif
-
-        // default View: iPadOS에서 화면 진입 시 SideBar와 함께 보여지는 기본 뷰
         CoursesView()
       }
     }

@@ -13,12 +13,18 @@ struct CoursesView: View {
   @Namespace var detailNamespace
   @State var selectedItem: Course? = nil
   @State var isDisabled = false
+  #if os(iOS)
+  @Environment(\.horizontalSizeClass) var horizontalSizeClass
+  #endif
 
   var body: some View {
     ZStack {
       #if os(iOS)
-      content
-        .navigationBarHidden(true)
+      if horizontalSizeClass == .compact {
+        tabBar
+      } else {
+        sideBar
+      }
       fullContent
         .background(VisualEffectBlur(blurStyle: .systemThickMaterial).edgesIgnoringSafeArea(.all))
       #else
@@ -34,13 +40,6 @@ struct CoursesView: View {
     // 작은 뷰
     ScrollView {
       VStack(spacing: 0) {
-        Text("Courses")
-          .font(.largeTitle)
-          .bold()
-          .frame(maxWidth: .infinity, alignment: .leading)
-          .padding(16)
-          .padding(.top, 54)
-
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 16)],
                   spacing: 16) {
           ForEach(courses) { item in
@@ -52,7 +51,7 @@ struct CoursesView: View {
                 .onTapGesture {
                   // 애니메이션 도중 여러번 터치해도 부드럽게 동작됨.
                   // .animation을 사용할 경우 애니메이션이 느려지고, 스크롤 시 렉이 발생한다.
-                  withAnimation(.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 0)) {
+                  withAnimation(.spring(response: 0.7, dampingFraction: 1.0, blendDuration: 0)) {
                     show.toggle()
                     selectedItem = item
                     isDisabled = true
@@ -86,6 +85,7 @@ struct CoursesView: View {
       }
     }
     .zIndex(1)
+    .navigationTitle("Courses")
   }
 
   @ViewBuilder
@@ -111,6 +111,77 @@ struct CoursesView: View {
       .frame(maxWidth: .infinity)
       .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))
     }
+  }
+
+  var tabBar: some View {
+    TabView {
+      NavigationView{
+        content
+      }
+      .tabItem {
+        Image(systemName: "book.closed")
+        Text("Courses")
+      }
+
+      NavigationView {
+        CourseList()
+      }
+      .tabItem {
+        Image(systemName: "list.bullet.rectangle")
+          Text("Tutorials")
+      }
+
+      NavigationView {
+        CourseList()
+      }
+      .tabItem {
+        Image(systemName: "tv")
+        Text("LiveStreams")
+      }
+
+      NavigationView {
+        CourseList()
+      }
+      .tabItem {
+        Image(systemName: "mail.stack")
+        Text("Certificates")
+      }
+
+      NavigationView {
+        CourseList()
+      }
+      .tabItem {
+        Image(systemName: "magnifyingglass")
+        Text("Search")
+      }
+    }
+  }
+
+  @ViewBuilder
+  var sideBar: some View {
+    #if os(iOS)
+    NavigationView {
+      List {
+        NavigationLink(destination: content) {
+          Label("Courses", systemImage: "book.closed")
+        }
+        Label("Tutorials", systemImage: "list.bullet.rectangle")
+        Label("LiveStreams", systemImage: "tv")
+        Label("Certificates", systemImage: "mail.stack")
+        Label("Search", systemImage: "magnifyingglass")
+          .listStyle(SidebarListStyle())
+          .navigationTitle("Learn")
+          .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+              Image(systemName: "person.crop.circle")
+            }
+          }
+        
+        // default View: iPadOS에서 화면 진입 시 SideBar와 함께 보여지는 기본 뷰
+        content
+      }
+    }
+    #endif
   }
 }
 

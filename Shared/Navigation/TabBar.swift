@@ -11,7 +11,7 @@ struct TabBar: View {
     var body: some View {
       TabView {
         NavigationView{
-          CoursesView()
+          CourseList()
         }
         .tabItem {
           Image(systemName: "book.closed")
