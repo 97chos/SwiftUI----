@@ -21,7 +21,7 @@ struct LibraryContent: LibraryContentProvider {
 
 - LibraryContentBuilder 태그를 생성하고, [LibraryItem]을 타입으로 갖는 views 내부에 LibraryItem 항목을 생성하면, <pre><code>com + shift + L</code></pre> 키를 눌러서 호출되는 라이브러리 메뉴창에서 title을 검색하여 간단하게 해당 뷰를 삽입할 수 있습니다.
 
-  (이미지)
+<img width="793" alt="스크린샷 2021-09-22 오전 2 32 21" src="https://user-images.githubusercontent.com/59811450/134219449-d574c10e-ed1d-4295-8111-2dc513d8e190.png">
   
 - 카테고리에는 control, effect, layout, other 등의 case가 있으며, 이를 통해 categorizing이 가능합니다.
 
@@ -59,7 +59,7 @@ extension View {
 
 - View에 대한 extension 메소드로 cardStyle을 정의하고, 해당 메소드로 리턴되는 LibraryItem을 card Style이란 이름으로 라이브러리에 등록한 모습입니다.
 
-(이미지)
+<img width="793" alt="스크린샷 2021-09-22 오전 2 32 28" src="https://user-images.githubusercontent.com/59811450/134219474-3d62b94b-ff33-4889-91ee-10b9ddcfa832.png">
 
 - Modifier Library 적용 이전
 ```swift
