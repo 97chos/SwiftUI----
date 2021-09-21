@@ -10,9 +10,10 @@ import SwiftUI
 struct CourseDetail: View {
   var course: Course = courses[0]
   var nameSpace: Namespace.ID
+  @State var showModal = false
 
   #if os(iOS)
-  var cornerRadius: CGFloat = 22
+  var cornerRadius: CGFloat = 10
   #else
   var cornerRadius: CGFloat = 0
   #endif
@@ -37,6 +38,12 @@ struct CourseDetail: View {
         VStack {
           ForEach(courseSections) { item in
             CourseRow(item: item)
+              .sheet(isPresented: $showModal, onDismiss: onDismiss) {
+                CourseSectionDetail()
+              }
+              .onTapGesture {
+                showModal = true
+              }
             Divider()
           }
         }
@@ -46,6 +53,10 @@ struct CourseDetail: View {
     .background(Color("Background 1"))
     .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
     .matchedGeometryEffect(id: "container\(course.id)", in: nameSpace)
+  }
+
+  func onDismiss() {
+    print("dismissed, showModal: ", showModal)
   }
 }
 

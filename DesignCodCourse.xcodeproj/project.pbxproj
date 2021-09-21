@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3BE06426F9BAED000D2E9B /* CourseSectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE06326F9BAED000D2E9B /* CourseSectionDetail.swift */; };
+		7E3BE06526F9BAED000D2E9B /* CourseSectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE06326F9BAED000D2E9B /* CourseSectionDetail.swift */; };
 		7E567BE326D4C7AA00B85DA9 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E567BE226D4C7AA00B85DA9 /* Tests_iOS.swift */; };
 		7E567BEE26D4C7AA00B85DA9 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E567BED26D4C7AA00B85DA9 /* Tests_macOS.swift */; };
 		7E567BF026D4C7AA00B85DA9 /* DesignCodCourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E567BC726D4C7A800B85DA9 /* DesignCodCourseApp.swift */; };
@@ -71,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3BE06326F9BAED000D2E9B /* CourseSectionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSectionDetail.swift; sourceTree = "<group>"; };
 		7E567BC726D4C7A800B85DA9 /* DesignCodCourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodCourseApp.swift; sourceTree = "<group>"; };
 		7E567BC826D4C7A800B85DA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E567BC926D4C7AA00B85DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7E567C2026D882AF00B85DA9 /* CourseDetail.swift */,
+				7E3BE06326F9BAED000D2E9B /* CourseSectionDetail.swift */,
 				7E567C1226D5E4F600B85DA9 /* CourseList.swift */,
 				7E567C0726D4DC5200B85DA9 /* CoursesView.swift */,
 				7E567BC726D4C7A800B85DA9 /* DesignCodCourseApp.swift */,
@@ -405,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E567C1626D622A200B85DA9 /* Course.swift in Sources */,
+				7E3BE06426F9BAED000D2E9B /* CourseSectionDetail.swift in Sources */,
 				7E567C2A26D884D900B85DA9 /* LivestreamSection.swift in Sources */,
 				7EB6881C26DC7EB00051EC4B /* TabBar.swift in Sources */,
 				7E567C3626D884D900B85DA9 /* Tutorial.swift in Sources */,
@@ -438,6 +443,7 @@
 				7E567C3526D884D900B85DA9 /* CourseSection.swift in Sources */,
 				7E567C3326D884D900B85DA9 /* TutorialSection.swift in Sources */,
 				7E567C2226D882AF00B85DA9 /* CourseDetail.swift in Sources */,
+				7E3BE06526F9BAED000D2E9B /* CourseSectionDetail.swift in Sources */,
 				7E567C3126D884D900B85DA9 /* Download.swift in Sources */,
 				7E567C1B26D7907400B85DA9 /* CloseButton.swift in Sources */,
 				7E567C0626D4D76500B85DA9 /* CourseRow.swift in Sources */,

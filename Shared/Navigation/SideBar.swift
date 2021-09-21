@@ -20,7 +20,7 @@ struct SideBar: View {
           }
         #else
         content
-          .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
+         .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
           .toolbar {
             ToolbarItem(placement: .automatic) {
               Button(action: {}) {
