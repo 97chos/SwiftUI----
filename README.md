@@ -8,7 +8,12 @@
 ## Curiculum
 - 빈 칸 및 링크되지 않은 챕터 내용은 추후에 내용 정리 예정입니다.
 
-- Section I: SwiftUI for iOS 14
+- **Section I: SwiftUI HandBook**
+> Ch#|Topic|Note?
+> :---:|:---|:---|
+> 1| Visual Editor in Xcode | SwiftUI 초기 설정
+
+- **Section II: SwiftUI for iOS 14**
 > Ch#|Topic|Note?
 > :---:|:---|:---|
 > 1| Build a SwiftUI app for iOS 14 | SwiftUI 프로젝트 생성하기
@@ -33,15 +38,15 @@
 > 20| [Create Widget](https://github.com/97chos/SwiftUI-Basic/blob/715cfc04e577e06fc295da62905b8585a1e91ec0/Lectures/Section1_SwiftUI%20for%20iOS%2014/20_Create%20Widget/Create%20Widget.md) | 위젯 구현 
 > 
 
-- Section II: Build an app with SwiftUI Part 1
+- **Section III: Build an app with SwiftUI Part 1**
 > Ch#|Topic|Note?
 > :---:|:---|:---|
 > 
-- Section III: Build an app with SwiftUI Part 2
+- **Section IV: Build an app with SwiftUI Part 2**
 > Ch#|Topic|Note?
 > :---:|:---|:---|
 
-- Section IV: Build an app with SwiftUI Part 3
+- **Section V: Build an app with SwiftUI Part 3**
 > Ch#|Topic|Note?
 > :---:|:---|:---|
 
