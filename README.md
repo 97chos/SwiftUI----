@@ -11,7 +11,7 @@
 - **Section I: SwiftUI HandBook**
 > Ch#|Topic|Note?
 > :---:|:---|:---|
-> 1| Visual Editor in Xcode | SwiftUI 초기 설정
+> 1| [Visual Editor in Xcode](https://github.com/97chos/SwiftUI-Basic/blob/065799c8f731ee262459746bafaafda04e0306b5/SwiftUI%20HandBook/Lectures/01_Visual%20Editor%20in%20Xcode/Visual%20Editor%20in%20Xcode.md) | SwiftUI 초기 설정
 
 - **Section II: SwiftUI for iOS 14**
 > Ch#|Topic|Note?
