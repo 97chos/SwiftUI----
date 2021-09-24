@@ -2,7 +2,7 @@
 
 ## Image
 - Image 메소드를 이용하여 Image View를 추가할 수 있습니다.
-- Asset에 추가된 이미지를 불러올 경우 인자값으로 해당 이미지의 name string을 전달하며, SF Symbol의 경우에는 Image(systemName: <#T##String#>)을 사용합니다.
+- Asset에 추가된 이미지를 불러올 경우 인자값으로 해당 이미지의 name string을 전달하며, SF Symbol의 경우에는 Image(systemName: <String>)을 사용합니다.
 
 ```swift
     Image(systemName: "cross.fill")
@@ -60,16 +60,9 @@
       }
 ```
 
-> <이미지>
+> <img width="300" alt="스크린샷 2021-09-24 오후 5 33 59" src="https://user-images.githubusercontent.com/59811450/134647727-37e1b407-8dbd-4d00-8cf8-fbd051a60d84.png">
 
 - Stroke 속성을 이용하여 도형의 layer만 그릴 수 있습니다.
-
-## Spacer
-- spacer는 SwiftUI의 Stack 구조에서 콘텐츠를 밀어내어 일정 부분의 여백을 차지하기위해 사용됩니다.
-- 적절한 곳에 여러 spacer를 배치하여 요소를 정렬하는 목적에 유용하게 사용됩니다. 
-
-> <img width="300" alt="spacing: 20, padding: 10, GridItem 3개" src="https://user-images.githubusercontent.com/59811450/130897184-d13e8aaf-0034-4d4a-8418-e217df3ce34f.png">
-
 
 ## 활용 예제
 
@@ -102,5 +95,5 @@ struct ContentView: View {
   }
 }
 ```
-
-> <이미지>
+> <img width="300" alt="스크린샷 2021-09-24 오후 5 57 39" src="https://user-images.githubusercontent.com/59811450/134647810-1a03115b-29b2-4ae9-a085-36c3c1e191f6.png">
+ 
