@@ -1,4 +1,4 @@
-# Ch2. Image, Shape and Stroke
+# Ch3. Image, Shape and Stroke
 
 ## Image
 - Image 메소드를 이용하여 Image View를 추가할 수 있습니다.
