@@ -12,6 +12,7 @@
 > Ch#|Topic|Note?
 > :---:|:---|:---|
 > 1| [Visual Editor in Xcode](https://github.com/97chos/SwiftUI-Basic/blob/065799c8f731ee262459746bafaafda04e0306b5/SwiftUI%20HandBook/Lectures/01_Visual%20Editor%20in%20Xcode/Visual%20Editor%20in%20Xcode.md) | SwiftUI 초기 설정
+> 2| [Stack and Spacer](https://github.com/97chos/SwiftUI-Basic/blob/235ad877579e8440f098383348fd8fffcb7d48fc/SwiftUI%20HandBook/Lectures/02_Stack%20And%20Spacer/Stack%20And%20Spacer.md) | Stack과 Spacer
 
 - **Section II: SwiftUI for iOS 14**
 > Ch#|Topic|Note?
