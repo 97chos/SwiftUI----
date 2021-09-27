@@ -15,6 +15,7 @@
 > 2| [Stack and Spacer](https://github.com/97chos/SwiftUI-Basic/blob/235ad877579e8440f098383348fd8fffcb7d48fc/SwiftUI%20HandBook/Lectures/02_Stack%20And%20Spacer/Stack%20And%20Spacer.md) | Stack과 Spacer
 > 3| [Image, Shape and Stroke](https://github.com/97chos/SwiftUI-Basic/blob/61a93eea5ccccfc649b1de859f18268176d4da69/SwiftUI%20HandBook/Lectures/03_Image,%20Shape%20and%20Stroke/Image,%20Shape%20and%20Stroke.md) | 이미지 삽입 방법과 도형 정의
 > 4| [Navigation and Toolbar](https://github.com/97chos/SwiftUI-Basic/blob/879c05bda72b849c3d77966b3dbe83c5b921f03b/SwiftUI%20HandBook/Lectures/04_NavigationVeiw%20and%20ToolBar/Navigation%20and%20Toolbar.md) | Sidebar, NavigationView 설정과 Toolbar 
+> 5| [ClipShape and Mask](https://github.com/97chos/SwiftUI-Basic/blob/59384daec1c4b53267c46490d03151c7d125ff42/SwiftUI%20HandBook/Lectures/05_Clipshape,%20CornerRadius/Clipshape,%20Mask.md) | ClipShape, shadow, mask 동작 
 
 - **Section II: SwiftUI for iOS 14**
 > Ch#|Topic|Note?
