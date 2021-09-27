@@ -86,7 +86,7 @@ struct CloseButton: View {
       }
     }
 ```
-> <img width="453" alt="스크린샷 2021-09-27 오후 4 39 05" src="https://user-images.githubusercontent.com/59811450/134866021-e93c77fd-e7de-4bb9-9173-b23f82f4c026.png">
+> <img width="300" alt="스크린샷 2021-09-27 오후 4 39 05" src="https://user-images.githubusercontent.com/59811450/134866021-e93c77fd-e7de-4bb9-9173-b23f82f4c026.png">
 
 - 이처럼 콘텐츠가 중간에 잘리는 일이 발생하는 경우 Grdient mask를 통해 자연스럽게 처리할 수 있습니다.
 
@@ -115,6 +115,6 @@ struct CloseButton: View {
       }
     }
 ```
- > <img width="485" alt="스크린샷 2021-09-27 오후 4 39 14" src="https://user-images.githubusercontent.com/59811450/134866111-41958808-9ec5-48c2-b3c0-30355c79b0ec.png">
+ > <img width="300" alt="스크린샷 2021-09-27 오후 4 39 14" src="https://user-images.githubusercontent.com/59811450/134866111-41958808-9ec5-48c2-b3c0-30355c79b0ec.png">
 
 - 위 코드에서는 LinearGradient를 사용하였으며, Grdient의 색상과 투명도, 시작 지점과 끝 지점을 정한 후 mask 처리한 모습입니다.
