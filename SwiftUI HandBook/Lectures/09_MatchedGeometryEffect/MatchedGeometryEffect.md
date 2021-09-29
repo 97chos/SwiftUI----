@@ -1,4 +1,4 @@
-# Ch8. MatchedGeometryEffect
+# Ch9. MatchedGeometryEffect
 
 ## MatcehdGeometryEffect
 - MatchedGeometry는 서로 다른 View 사이에 요소들을 공유하여, 자연스러운 View 전환을 할 수 있도록 도와주는 메소드입니다.
