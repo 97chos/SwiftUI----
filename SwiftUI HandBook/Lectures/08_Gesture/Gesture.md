@@ -62,4 +62,5 @@
 - 위 코드는 CGSize 타입의 viewState를 value의 translation 값으로 삽입하여 현재 view의 위치를 translation의 위치값으로 변경하는 코드입니다.
 - 만약, 드래그 이벤트가 종료되었을 경우(.onEnded) viewState는 다시 .zero로 초기화하여 원래의 자리로 돌아가도록 설정하였습니다.
 
-> <이미지>
+> ![Simulator Screen Recording - iPhone 13 Pro Max - 2021-09-29 at 11 02 14](https://user-images.githubusercontent.com/59811450/135193353-30700e3d-d6b0-4c75-afb3-7bde2e7e629d.gif)
+
