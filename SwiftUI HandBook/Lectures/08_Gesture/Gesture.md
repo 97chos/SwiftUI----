@@ -31,6 +31,7 @@
 - LongPressGesture의 minimumduration 값을 이용하여 최소 터치 인식 시간을 정의할 수 있습니다.
 - updating 메소드의 인자값으로는 GestureState를 전달하는데, 이 때 삽입된 인자값은 return으로 반환되는 값 중 하나가 되어 변경될 수 있으므로, 앞에 $을 표기하여 바인딩 작업을 처리해주어야 합니다.
 - updating 메소드는 총 3개의 return 값을 갖는데, 이벤트 처리 중일 때의 LongPressGesture.Value(Bool) 값, 바인딩된 GestureState, 현재 애니메이션 상태에 대한 값을 전달(?)하는 Transaction이 return 됩니다.
+- gesture 이벤트가 종료될 때, 바인딩된 gestureState는 필연적으로 초기값으로 초기화됩니다.  
 - 위 코드는 LongPressGesture 이벤트 발생 시 press의 상태 값을 변경하여 Image의 Scale 값을 변경하고, 이벤트가 종료될 때(onEnded) State를 Toggle하여 Image의 background를 변경하는 코드입니다. 
 
 ### DragGesture
