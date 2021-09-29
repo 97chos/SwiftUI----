@@ -3,8 +3,7 @@
 ## MatcehdGeometryEffect
 - MatchedGeometry는 서로 다른 View 사이에 요소들을 공유하여, 자연스러운 View 전환을 할 수 있도록 도와주는 메소드입니다.
 - Text, Button, Background와 같은 요소들은 따로 애니메이션 상태를 지정하지 않고도 개별적으로 애니메이션 처리되며, 쉽고 부드러운 움직임을 지원합니다. 
-
-> 이미지
+> ![Simulator Screen Recording - iPhone 13 Pro Max - 2021-09-29 at 12 32 17](https://user-images.githubusercontent.com/59811450/135198638-cc9ab40f-6f16-4043-99f5-8aba245e7e4e.gif)
 
 ```swift
 // MatchedGeometry.swift
@@ -151,4 +150,4 @@ struct PlayView: View {
 - summaryView, PlayView의 struct를 생성하고, State에 따라 두 View 간의 전환이 이루어지는 방식입니다.
 - 두 struct에는 각각 namespace가 생성되어 있으며, MusicPlayer에서 공통의 namespace를 전달하여 같은 namespace를 공유하게 됩니다.
 
-> 이미지
+> ![Simulator Screen Recording - iPhone 13 Pro Max - 2021-09-29 at 12 32 36](https://user-images.githubusercontent.com/59811450/135198662-f4042946-ca56-4530-b99a-f3f0893d3254.gif)
