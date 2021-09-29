@@ -18,6 +18,8 @@
 > 5| [ClipShape and Mask](https://github.com/97chos/SwiftUI-Basic/blob/59384daec1c4b53267c46490d03151c7d125ff42/SwiftUI%20HandBook/Lectures/05_Clipshape,%20CornerRadius/Clipshape,%20Mask.md) | ClipShape, shadow, mask 동작 이해 
 > 6| [TabView](https://github.com/97chos/SwiftUI-Basic/blob/1d54b419d34a4e5d1cb1f8756e3c0eca1d397030/SwiftUI%20HandBook/Lectures/06_TabView/TabView.md) | TabView 동작 이해
 > 7| [Animations](https://github.com/97chos/SwiftUI-Basic/blob/94be251aedd71ff83719916507df4240cc29b172/SwiftUI%20HandBook/Lectures/07_Animations/Animations.md) | 다양한 애니메이션 효과 적용
+> 8| [Gesture](https://github.com/97chos/SwiftUI-Basic/blob/5a46efb3bf8afe352eb9bd1d9973fa95fa99be45/SwiftUI%20HandBook/Lectures/08_Gesture/Gesture.md) | Gesture 이벤트 구현
+
 - **Section II: SwiftUI for iOS 14**
 > Ch#|Topic|Note?
 > :---:|:---|:---|
