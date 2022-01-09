@@ -1,4 +1,4 @@
-# Ch10. Lazy Grid And Stack
+# Ch11. Lazy Grid And Stack
 
 ## LazyGrid
 - LazyGrid는 **유연하고 쉽제 적용할 수 있는 Grid Layout**을 생성하는데에 사용됩니다.
