@@ -67,7 +67,7 @@ struct CoursesView: View {
 
         Text("Latest sections")
           .fontWeight(.semibold)
-          .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+          .frame(maxWidth: .infinity, alignment: .leading)
           .padding()
 
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 240))]) {
