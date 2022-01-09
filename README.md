@@ -21,7 +21,7 @@
 > 8| [Gesture](https://github.com/97chos/SwiftUI-Basic/blob/5a46efb3bf8afe352eb9bd1d9973fa95fa99be45/SwiftUI%20HandBook/Lectures/08_Gesture/Gesture.md) | Gesture 이벤트 구현
 > 9| [MatchedGeometryEffect](https://github.com/97chos/SwiftUI-Basic/blob/1437eb6825bb9c2f95101df90744437fd9331d20/SwiftUI%20HandBook/Lectures/09_MatchedGeometryEffect/MatchedGeometryEffect.md) | MatchedGeometryEffect 적용
 > 10| [Lottie(UIViewRepresentable)](https://github.com/97chos/SwiftUI-Basic/blob/b258b13f0b1122cf080976011eead96c1fb1e6f5/SwiftUI%20HandBook/Lectures/10_Lottie/Lottie.md) | Lottie Animation 적용 및 UIViewRepresentable에 대한 이해
-> 11| [Lazy Grid and Stack](https://github.com/97chos/SwiftUI-Basic/blob/bfbf4c27013bf37044717910b62f831867c65845/SwiftUI%20HandBook/Lectures/11_Lazy%20Grid%20And%20Stack/Lazy%20Grid%20And%20Stack.md) | LazyStack, LazyGrid에 대한 
+> 11| [Lazy Grid and Stack](https://github.com/97chos/SwiftUI-Basic/blob/bfbf4c27013bf37044717910b62f831867c65845/SwiftUI%20HandBook/Lectures/11_Lazy%20Grid%20And%20Stack/Lazy%20Grid%20And%20Stack.md) | LazyStack, LazyGrid에 대한 이해
 
 - **Section II: SwiftUI for iOS 14**
 > Ch#|Topic|Note?
