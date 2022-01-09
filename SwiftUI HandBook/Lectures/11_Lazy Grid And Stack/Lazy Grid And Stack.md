@@ -10,7 +10,7 @@ struct LazyLayout: View {
   var body: some View {
     ScrollView {
       VStack {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 30) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 100), spacing: 50)], spacing: 20) {
           ForEach(0 ..< 20) { item in
             Rectangle()
               .frame(height: 100)
@@ -23,9 +23,11 @@ struct LazyLayout: View {
   }
 }
 ```
-> ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-01-09 at 20 48 57](https://user-images.githubusercontent.com/59811450/148680936-cf681369-bc38-42ed-8cf9-20e4fbd927d7.png)
+> <img width="348" alt="스크린샷 2022-01-09 오후 9 03 37" src="https://user-images.githubusercontent.com/59811450/148681427-7c5b089e-1f70-4e93-8416-9a5c4b48e4dd.png">
 
-- columns에(LazyHGrid일 경우 rows) GridItem을 추가한 후, spacing을 통해 행간(LazyHGrid일 경우 열간)을 조정할 수 있습니다.
+
+- columns에(LazyHGrid일 경우 rows) GridItem을 추가한 후, spacing을 통해 열간(LazyHGrid일 경우 행간)을 조정할 수 있습니다.
+- 배열 외부에 작성된 spacing은 위와 반대로 LazyVGrid는 행간, LazyHGrid는 열간을 나타냅니다. (위 코드는 LazyVGrid가 적용되었으므로 양옆 너비 50, 상하 간격 20) 
 - GridItem은 .adpative, .flexible, .fixed 총 세 가지 타입을 갖습니다.
 - 최소값이나 최대값을 주고 유연한 크기의 Item을 그리려면 adaptive, 화면 크기에 맞게 자동적으로 크기를 맞추고 싶으면 flexible, 고정된 크기로 그리려면 .fixed를 사용합니다. 
 - ForEach 내부 파라미터 값으로 배열과 같은 데이터를 전달할 수 있습니다.
