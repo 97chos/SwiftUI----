@@ -51,7 +51,6 @@ print(address.town) // EARTH
 ```
 
 - 이런식으로 아예 Uppercase를 선언할 당시부터 value 값을 지정하여 초기화할 수도 있습니다.
-
 - 만약, Uppercase의 init을 지운다면
 
 <img width="421" alt="스크린샷 2022-01-14 오후 11 46 27" src="https://user-images.githubusercontent.com/59811450/149534445-dcd918a8-1acf-467e-adb8-a4d657810738.png">
@@ -70,7 +69,6 @@ print(person.name) // SAM
 - 같은 로직을 가진 propertyWrapper를 Person이라는 struct에 적용한 모습입니다.
 - Address와 Person의 프로퍼티는 같은 로직을 갖고 있지만, 해당 로직을 propertyWrapper에 담아 적용시킴으로써 반복되는 코드의 양을 줄인 모습입니다.
 - 이처럼 **Property Wrapper는 반복되는 로직을 프로퍼티 자체에 연결하여 코드의 재사용성을 높여줍니다.**
-
 
 ### WWDC 19 예제
   
@@ -184,7 +182,7 @@ struct ChildView: View {
 - @State 값을 전달할 때 단순히 `isToggleOn`을 전달하면 Bool 값이 전달되지만, `$isToggleOn`처럼 $이 붙으면 프로퍼티 래퍼 자체를 전달하기 때문에, 자식뷰에서 부모뷰에 선언된 State의 WrappedValue 값을 변경할 수 있게 됩니다. 
 - 만약 부모뷰, 자식뷰와 같이 수직적인 구조가 아닌 아예 다른 클래스에서 값을 참조하고 싶다면 `@ObservableObject`를 사용할 수 있습니다.
 
-##@ObservableObject
+## @ObservableObject
 
 - @ObservableObject는 Protocol로, Combine 프레임워크의 일부입니다.
 - 별도의 클래스를 생성한 다음 SwiftUI에서 사용할 수 있으며, 내부 프로퍼티에 `@Publised`를 붙여 **View에게 해당 값이 변경되었음을 즉각 알려줄 수 있습니다.**
