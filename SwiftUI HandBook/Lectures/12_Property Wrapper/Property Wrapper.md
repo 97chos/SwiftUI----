@@ -228,7 +228,7 @@ class CountRepo: ObservableObject {
 }
 ```
 
-- 위 코드에서 사용한 `objectWillChange.send()`는 **SwiftUI에서 갑이 변동되었음을 알려주는 메소드**로, 해당 메소드가 선언되었을 때만 UI를 변경시킬 수 있습니다.
+- 위 코드에서 사용한 `objectWillChange.send()`는 **SwiftUI에서 이 변동되었음을 알려주는 메소드**로, 해당 메소드가 선언되었을 때만 UI를 변경시킬 수 있습니다.
 - 이제 예제에서는 count의 값이 5의 배수일 때만 텍스트가 변경됩니다.
  
 ## @EnvironmentObject
